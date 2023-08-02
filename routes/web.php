@@ -17,4 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
   $name = 'Andrea';
   return view('home', compact('name'));
-});
+})->name('home');
+
+Route::get('/test.blade.php', function () {
+  return view('test');
+})->name('test1');
+
+Route::get('/test2.blade.php', function () {
+  return view('test2');
+})->name('test2');
