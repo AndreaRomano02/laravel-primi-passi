@@ -9,6 +9,7 @@
 
 <body>
   <h1>Welcome i'm using Laravel!!!</h1>
+  <p>Made by {{ $name }}</p>
 </body>
 
 </html>

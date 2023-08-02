@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Composer;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-  return view('home');
+  $name = 'Andrea';
+  return view('home', compact('name'));
 });
